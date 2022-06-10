@@ -15,8 +15,6 @@ jobs:
     steps:
       - checkout
       - run: flutter format --set-exit-if-changed -o none lib && exit $(git diff | wc -l)
-          name: "Say hello"
-          command: "echo Hello, World!"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
